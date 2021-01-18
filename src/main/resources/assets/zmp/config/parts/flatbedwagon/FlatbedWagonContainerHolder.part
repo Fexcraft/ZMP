@@ -1,0 +1,12 @@
+{
+    "RegistryName": "zmp:flatbedwagon_containerholder",
+    "Addon": "fvtm:zmp",
+    "Model": "zmp:models/part/flatbedwagon_containerholder",
+    "Name": "FlatbedWagon's Container Holder",
+    "Category": "cargo",
+    "Texture": "zmp:textures/trains/flatbedwagon.png",
+    "Installation":{
+    	"Compatible": [ { "vehicle": "zmp:flatbedwagon" } ]
+    },
+    "Function":{ "id": "fvtm:container", "x": 0, "y": 21, "z": 0, "rot": 0, "length": 12 }
+}

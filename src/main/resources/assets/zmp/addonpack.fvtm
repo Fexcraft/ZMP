@@ -1,0 +1,16 @@
+{
+  "RegistryName": "fvtm:zmp",
+  "Name": "Zack's Pack'",
+  "URL": "http://fexcraft.net/download?modid=addon-zmp",
+  "UpdateID": "addon-zmp",
+  "License": "http://fexcraft.net/license?id=mods",
+  "Dependencies": ["fvtm:gep"],
+  "Authors": [
+    "643a5fd6-f325-442f-9ea8-6445dbb0cdc9",
+    "01e4af9b-2a30-471e-addf-f6338ffce04b"
+  ],
+  "Version": "2.0",
+  "GenerateLang": false,
+  "GenerateItemJson": false,
+  "GenerateItemIcon": false
+}

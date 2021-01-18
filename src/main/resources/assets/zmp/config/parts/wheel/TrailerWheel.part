@@ -1,0 +1,23 @@
+{
+    "RegistryName": "zmp:trailer_wheel",
+    "Addon": "fvtm:zmp",
+    "Name": "Generic Trailer Wheel",
+    "Model": "zmp:models/part/trailer_wheel",
+    "Category": "wheel",
+    "Functions": [ "fvtm:wheel", "fvtm:tire" ],
+    "Textures": [
+        "Default;zmp:textures/wheels/trailer_wheel.png"
+    ],
+    "Installation":{
+    	"Handler": "wheel",
+        "Removable": true,
+        "Radius": 5.95, "Width": 4
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "15.8", "priority": "veryhigh"
+    	}
+    ]
+}

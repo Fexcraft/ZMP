@@ -1,0 +1,34 @@
+{
+    "RegistryName": "zmp:dd28_engine",
+    "Addon": "fvtm:zmp",
+    "Name": "DD28 Engine (Double V6)",
+    "Model": "zmp:models/part/dd28_engine",
+    "Category": "engine",
+    "Textures": [
+        "zmp:textures/trains/dd28_green.png",
+        "zmp:textures/trains/dd28_blue.png",
+        "zmp:textures/trains/dd28_red.png"
+    ],
+    "Installation":{
+    	"Compatible": [ { "vehicle": "zmp:dd28" } ]
+    },
+    "Function": {
+    	"id": "fvtm:engine",
+    	"engine_speed": 1.25,
+    	"idle_consumption": 4,
+    	"active_consumption": 18,
+    	"consumptions": {
+    		"petrodiesel": 20,
+    		"synthetic": 17,
+    		"biodiesel": 19
+    	},
+    	"fuel_group": "diesel",
+    	"min_rpm": 1000,
+	    "max_rpm": 5800,
+	    "torque_chart":{
+	        "1000": 300,
+	        "4000": 450,
+	        "5800": 400
+	    }
+    }
+}

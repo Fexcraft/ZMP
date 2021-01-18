@@ -1,0 +1,32 @@
+{
+    "RegistryName": "zmp:dd28_interior",
+    "Addon": "fvtm:zmp",
+    "Model": "zmp:models/part/dd28_interior",
+    "Name": "DD28 Interior and Assets",
+    "Category": [ "interior" ],
+    "Textures": [ 
+        "zmp:textures/trains/dd28_green.png",
+        "zmp:textures/trains/dd28_blue.png",
+        "zmp:textures/trains/dd28_red.png"
+    ],
+    "Installation":{
+    	"Compatible": [ { "vehicle": "zmp:dd28" } ],
+    	"Removable": false
+    },
+    "Modifiers":[
+    	{
+    		"id": "fuel_capacity", "type": "additive",
+    		"target": "vehicle:fuel_capacity",
+    		"value": "220000", "priority": "veryhigh"
+    	}
+    ],
+    "Functions":[
+    	{
+			"id": "fvtm:seats",
+			"seats":[
+				{ "x": 37.5, "y": 35, "z": -13, "name": "driver", "driver": true, "min_yaw": -180, "max_yaw": 180 },
+				{ "x": 37.5, "y": 35, "z":  13, "name": "passenger" }
+			]
+    	}
+    ]
+}

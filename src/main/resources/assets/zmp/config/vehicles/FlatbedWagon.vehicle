@@ -1,0 +1,24 @@
+{
+    "RegistryName": "zmp:flatbedwagon",
+    "Addon": "fvtm:zmp",
+    "Name": "Flatbed Wagon",
+    "Model": "zmp:models/vehicle/flatbedwagon",
+    "Texture": "zmp:textures/trains/flatbedwagon.png",
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 2300 },
+    	{ "id":"constructor_length", "type": "float", "value": 7 },
+    	{ "id":"constructor_height", "type": "float", "value": 0 }
+    ],
+    "WheelPositions":[
+        { "x":  85.5, "y": -13, "z": 0, "id": "bogie_front" },
+        { "x": -85.5, "y": -13, "z": 0, "id": "bogie_rear" }
+    ],
+    "PreInstalled":{
+        "bogie_front": "fvp:bogie_st1",
+        "bogie_rear": "fvp:bogie_st1" 
+	},
+    "RearConnector": [ -124, -21, 0 ],
+    "FrontConnector": [ 124, -21, 0 ],
+	"VehicleType": "RAIL",
+    "Wagon": true
+}
