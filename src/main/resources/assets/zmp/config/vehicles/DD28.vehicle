@@ -8,6 +8,7 @@
         "Default Blue;zmp:textures/trains/dd28_blue.png",
         "Default Red;zmp:textures/trains/dd28_red.png"
     ],
+    "Category": "train,locomotive",
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 2953.12 },
     	{ "id":"constructor_length", "type": "float", "value": 6 },

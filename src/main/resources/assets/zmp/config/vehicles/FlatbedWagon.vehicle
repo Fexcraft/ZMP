@@ -9,6 +9,7 @@
     	{ "id":"constructor_length", "type": "float", "value": 7 },
     	{ "id":"constructor_height", "type": "float", "value": 0 }
     ],
+    "Category": "train,wagon,cargo_wagon",
     "WheelPositions":[
         { "x":  85.5, "y": -13, "z": 0, "id": "bogie_front" },
         { "x": -85.5, "y": -13, "z": 0, "id": "bogie_rear" }

@@ -10,6 +10,7 @@
     	{ "id":"constructor_height", "type": "float", "value": -7.5 },
     	{ "id":"constructor_wheel_offset", "type": "float", "value": 18 }
     ],
+    "Category": "trailer,car_trailer",
     "WheelPositions":[
         { "x": -81.5, "y": 2, "z": 18.5, "id": "left_back_wheel", "radius": 6  },
         { "x": -81.5, "y": 2, "z": -18.5, "id": "right_back_wheel", "radius": 6, "y_rot": 180 }
