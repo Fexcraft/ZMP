@@ -1,13 +1,14 @@
 //
 itemGroup.fvtm:zmp=Zack's Model Projects
-item.zmp:dd28_engine.name=
-item.zmp:dd28_interior.name=
-item.zmp:flatbedwagon_containerholder.name=
+item.zmp:dd28_engine.name=DD28 Locomotive Engine
+item.zmp:dd28_interior.name=DD28 Interior
+item.zmp:flatbedwagon_containerholder.name=Flatbed Wagon Container Holder
 item.zmp:flatbedwagon_logtransport.name=
 item.zmp:flatbedwagon_logtransport2.name=
-item.zmp:trailer_wheel.name=
-item.zmp:camperbox_trailer.name=
-item.zmp:dd28.name=
-item.zmp:farm_trailer.name=
-item.zmp:flatbedwagon.name=
-item.zmp:passenger_wagon_01.name=
+item.zmp:trailer_wheel.name=ZMP Trailer Wheel
+item.zmp:camperbox_trailer.name=Camperbox Trailer
+item.zmp:dd28.name=DD28 Locomotive
+item.zmp:farm_trailer.name=Farm Trailer
+item.zmp:flatbedwagon.name=Flatbed Wagon
+item.zmp:passenger_wagon_01.name=Passenger Wagon (01)
+item.zmp:passenger_wagon_01_seats.name=Passenger Wagon (01) Seats
