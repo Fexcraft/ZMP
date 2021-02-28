@@ -5,13 +5,19 @@
     "Model": "zmp:models/vehicle/utility_trailer",
     "Textures": [ "zmp:textures/trailers/utility.png" ],
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 620.75 }
+    	{ "id":"weight", "type": "float", "value": 620.75 },
+    	{ "id":"storagebox_left", "type": "boolean", "value": false, "editable": true, "external": true, "hitbox": [ -46.5, -11, 15, 4 ] },
+    	{ "id":"storagebox_right", "type": "boolean", "value": false, "editable": true, "external": true, "hitbox": [ -46.5, -11, -15, 4 ] }
     ],
     "Category": "trailer,car_trailer",
     "WheelPositions":[
         { "x": -76.5, "y": 2, "z": 18.5, "id": "left_back_wheel", "radius": 6  },
         { "x": -76.5, "y": 2, "z": -18.5, "id": "right_back_wheel", "radius": 6, "y_rot": 180 }
     ],
+    "PreInstalled":{
+        "storagebox_left": "zmp:utility_trailer_storagebox",
+        "storagebox_right": "zmp:utility_trailer_storagebox"
+	},
     "Trailer": true,
     "LegacyData": {}
 }

@@ -252,6 +252,7 @@ public class UtilityTrailer extends VehicleModel {
 		door_rf.add(new ModelRendererTurbo(door_rf, 505, 33, textureX, textureY).addBox(-10, 0, -1.3f, 2, 1, 1)
 			.setRotationPoint(-34, -11.7f, -15).setRotationAngle(0, 0, -0).setName("Box 218")
 		);
+		door_rf.addProgram(new DefaultPrograms.AttributeRotator("storagebox_right", true, -170, 0, -1f, 1, null));
 		this.groups.add(door_rf);
 		//
 		TurboList door_rb = new TurboList("door_rb");
@@ -262,6 +263,7 @@ public class UtilityTrailer extends VehicleModel {
 		door_rb.add(new ModelRendererTurbo(door_rb, 225, 49, textureX, textureY).addBox(8, 0, -1.3f, 2, 1, 1)
 			.setRotationPoint(-59, -11.7f, -15).setRotationAngle(0, 0, -0).setName("Box 219")
 		);
+		door_rb.addProgram(new DefaultPrograms.AttributeRotator("storagebox_right", true, 0, 170, 1f, 1, null));
 		this.groups.add(door_rb);
 		//
 		TurboList door_lf = new TurboList("door_lf");
@@ -272,6 +274,7 @@ public class UtilityTrailer extends VehicleModel {
 		door_lf.add(new ModelRendererTurbo(door_lf, 505, 17, textureX, textureY).addBox(-10, 0, 0.3f, 2, 1, 1)
 			.setRotationPoint(-34, -11.7f, 15).setRotationAngle(0, 0, -0).setName("Box 217")
 		);
+		door_lf.addProgram(new DefaultPrograms.AttributeRotator("storagebox_left", true, 0, 170, 1f, 1, null));
 		this.groups.add(door_lf);
 		//
 		TurboList door_lb = new TurboList("door_lb");
@@ -282,6 +285,7 @@ public class UtilityTrailer extends VehicleModel {
 		door_lb.add(new ModelRendererTurbo(door_lb, 457, 9, textureX, textureY).addBox(8, 0, 0.3f, 2, 1, 1)
 			.setRotationPoint(-59, -11.7f, 15).setRotationAngle(0, 0, -0).setName("Box 216")
 		);
+		door_lb.addProgram(new DefaultPrograms.AttributeRotator("storagebox_left", true, -170, 0, -1f, 1, null));
 		this.groups.add(door_lb);
 		//
 		TurboList primary = new TurboList("primary");

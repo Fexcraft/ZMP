@@ -1,0 +1,15 @@
+{
+    "RegistryName": "zmp:utility_trailer_storagebox",
+    "Addon": "fvtm:zmp",
+    "Model": "null",
+    "Name": "Utility Trailer Storagebox",
+    "Category": [ "storagebox_left", "storagebox_right"],
+    "Installation":{
+    	"Compatible": [ "zmp:utility_trailer" ],
+    	"Removable": false
+    },
+    "Function": {
+    	"id": "fvtm:inventory", "type": "ITEM", "capacity": 54,
+    	"seats": [ "external" ]
+    }
+}
