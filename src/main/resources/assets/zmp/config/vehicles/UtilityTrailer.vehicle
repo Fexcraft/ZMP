@@ -1,0 +1,17 @@
+{
+    "RegistryName": "zmp:utility_trailer",
+    "Addon": "fvtm:zmp",
+    "Name": "Utility Trailer",
+    "Model": "zmp:models/vehicle/utility_trailer",
+    "Textures": [ "zmp:textures/trailers/utility.png" ],
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 620.75 }
+    ],
+    "Category": "trailer,car_trailer",
+    "WheelPositions":[
+        { "x": -76.5, "y": 2, "z": 18.5, "id": "left_back_wheel", "radius": 6  },
+        { "x": -76.5, "y": 2, "z": -18.5, "id": "right_back_wheel", "radius": 6, "y_rot": 180 }
+    ],
+    "Trailer": true,
+    "LegacyData": {}
+}
