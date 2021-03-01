@@ -12,3 +12,5 @@ item.zmp:farm_trailer.name=Farm Trailer
 item.zmp:flatbedwagon.name=Flatbed Wagon
 item.zmp:passenger_wagon_01.name=Passenger Wagon (01)
 item.zmp:passenger_wagon_01_seats.name=Passenger Wagon (01) Seats
+item.zmp:utility_trailer_storagebox.name=Utility Trailer Storagebox
+item.zmp:utility_trailer.name=Utility Trailer
