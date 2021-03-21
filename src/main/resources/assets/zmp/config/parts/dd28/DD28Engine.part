@@ -35,12 +35,12 @@
 	    },
     	{
     		"id": "fvtm_potr:emission_emitter",
-    		"emissions": [ 0.8, 0.02, 0.4 ],
+    		"emissions": [ 2, 0.02, 0.7 ],
     		"engine": true
     	},
     	{
     		"id": "fvtm_potr:emission_filter",
-    		"emissions": [ 0.6, 0.5, 0.5 ],
+    		"emissions": [ 0.5, 0.5, 0.5 ],
     		"parts": [ "engine" ]
     	}
      ]
