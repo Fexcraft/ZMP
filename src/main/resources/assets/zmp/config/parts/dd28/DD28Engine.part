@@ -12,23 +12,36 @@
     "Installation":{
     	"Compatible": [ { "vehicle": "zmp:dd28" } ]
     },
-    "Function": {
-    	"id": "fvtm:engine",
-    	"engine_speed": 1.25,
-    	"idle_consumption": 4,
-    	"active_consumption": 18,
-    	"consumptions": {
-    		"petrodiesel": 20,
-    		"synthetic": 17,
-    		"biodiesel": 19
+    "Functions": [
+    	{
+	    	"id": "fvtm:engine",
+	    	"engine_speed": 1.25,
+	    	"idle_consumption": 4,
+	    	"active_consumption": 18,
+	    	"consumptions": {
+	    		"petrodiesel": 20,
+	    		"synthetic": 17,
+	    		"biodiesel": 19
+	    	},
+	    	"fuel_group": "diesel",
+	    	"min_rpm": 1000,
+		    "max_rpm": 5800,
+		    "torque_chart":{
+		        "1000": 300,
+		        "4000": 450,
+		        "5800": 400
+		    }
+		    
+	    },
+    	{
+    		"id": "fvtm_potr:emission_emitter",
+    		"emissions": [ 0.8, 0.02, 0.4 ],
+    		"engine": true
     	},
-    	"fuel_group": "diesel",
-    	"min_rpm": 1000,
-	    "max_rpm": 5800,
-	    "torque_chart":{
-	        "1000": 300,
-	        "4000": 450,
-	        "5800": 400
-	    }
-    }
+    	{
+    		"id": "fvtm_potr:emission_filter",
+    		"emissions": [ 0.6, 0.5, 0.5 ],
+    		"parts": [ "engine" ]
+    	}
+     ]
 }
