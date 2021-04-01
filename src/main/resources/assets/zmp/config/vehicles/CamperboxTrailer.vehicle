@@ -5,10 +5,7 @@
     "Model": "zmp:models/vehicle/camperbox_trailer",
     "Textures": [ "zmp:textures/trailers/camperbox.png" ],
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 570.20 },
-    	{ "id":"constructor_length", "type": "float", "value": 3 },
-    	{ "id":"constructor_height", "type": "float", "value": -7.5 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 18 }
+    	{ "id":"weight", "type": "float", "value": 570.20 }
     ],
     "Category": "trailer,car_trailer",
     "WheelPositions":[

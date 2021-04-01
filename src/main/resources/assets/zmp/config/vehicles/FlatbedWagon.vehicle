@@ -5,9 +5,7 @@
     "Model": "zmp:models/vehicle/flatbedwagon",
     "Texture": "zmp:textures/trains/flatbedwagon.png",
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 2300 },
-    	{ "id":"constructor_length", "type": "float", "value": 7 },
-    	{ "id":"constructor_height", "type": "float", "value": 0 }
+    	{ "id":"weight", "type": "float", "value": 2300 }
     ],
     "Category": "train,wagon,cargo_wagon",
     "WheelPositions":[

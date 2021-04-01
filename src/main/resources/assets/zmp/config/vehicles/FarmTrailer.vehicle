@@ -5,10 +5,7 @@
     "Model": "zmp:models/vehicle/farm_trailer",
     "Textures": [ "zmp:textures/trailers/farm.png" ],
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 620.75 },
-    	{ "id":"constructor_length", "type": "float", "value": 5 },
-    	{ "id":"constructor_height", "type": "float", "value": -7.5 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 18 }
+    	{ "id":"weight", "type": "float", "value": 620.75 }
     ],
     "Category": "trailer,car_trailer",
     "WheelPositions":[

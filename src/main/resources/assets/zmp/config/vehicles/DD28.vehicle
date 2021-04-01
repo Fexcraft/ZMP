@@ -10,9 +10,7 @@
     ],
     "Category": "train,locomotive",
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 2953.12 },
-    	{ "id":"constructor_length", "type": "float", "value": 6 },
-    	{ "id":"constructor_height", "type": "float", "value": 0 }
+    	{ "id":"weight", "type": "float", "value": 2953.12 }
     ],
     "WheelPositions":[
         { "x":  52, "y": -13, "z": 0, "id": "bogie_front" },

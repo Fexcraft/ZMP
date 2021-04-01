@@ -5,9 +5,7 @@
     "Model": "zmp:models/vehicle/passenger_wagon_01",
     "Texture": "zmp:textures/trains/pw_01.png",
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 5000 },
-    	{ "id":"constructor_length", "type": "float", "value": 6 },
-    	{ "id":"constructor_height", "type": "float", "value": 0 }
+    	{ "id":"weight", "type": "float", "value": 5000 }
     ],
     "Category": "train,wagon,passenger_wagon",
     "WheelPositions":[
