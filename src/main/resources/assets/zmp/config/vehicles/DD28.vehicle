@@ -10,7 +10,9 @@
     ],
     "Category": "train,locomotive",
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 2953.12 }
+    	{ "id":"weight", "type": "float", "value": 2953.12 },
+    	{ "id": "hitbox_width", "type": "float", "value": 2 },
+    	{ "id": "hitbox_height", "type": "float", "value": 2 }
     ],
     "WheelPositions":[
         { "x":  52, "y": -13, "z": 0, "id": "bogie_front" },
