@@ -3,6 +3,7 @@ package net.fexcraft.mod.addon.zmp.models.vehicles;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.TurboList;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
@@ -1808,6 +1809,7 @@ public class PassengerWagon01Model extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0)
 			.setRotationPoint(-16, -54, -25).setRotationAngle(0, 0, 0).setName("Box 726")
 		);
+		primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(primary);
 	}
 
