@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.zmp.models.part.wagon;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
@@ -18,7 +18,7 @@ public class PassengerWagon01Seats extends VehicleModel {
 		this.addToCreators("zackyboy19");
 		this.addToCreators("Ferdinand");
 		//
-		TurboList seats = new TurboList("seats");
+		ModelGroup seats = new ModelGroup("seats");
 		seats.add(new ModelRendererTurbo(seats, 987, 201, textureX, textureY).addBox(0, 0, 0, 9, 1, 9)
 			.setRotationPoint(-71.5f, -32, 12).setRotationAngle(0, 0, 0).setName("Box 1057")
 		);

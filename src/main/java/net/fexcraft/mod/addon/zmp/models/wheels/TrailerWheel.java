@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.zmp.models.wheels;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 
@@ -19,7 +19,7 @@ public class TrailerWheel extends PartModel {
 		this.addToCreators("zackyboy18");
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList wheel = new TurboList("wheel");
+		ModelGroup wheel = new ModelGroup("wheel");
 		wheel.add(new ModelRendererTurbo(wheel, 8, 32, textureX, textureY)
 			.addShapeBox(-0.5f, -1.5f, -1.5f, 2, 3, 2, 0, -0.5f, 0.25f, 0, 0, -0.75f, 0, 0, -0.75f, 0, -0.5f, 0.25f, 0, -0.5f, 0.25f, 0, 0, -0.75f, 0, 0, -0.75f, 0, -0.5f, 0.25f, 0)
 			.setRotationPoint(0, 0, 2.5f).setRotationAngle(0, 0, 0).setName("Box 506")

@@ -3,13 +3,9 @@ package net.fexcraft.mod.addon.zmp.models.part.wagon;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.data.root.Colorable;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
 import net.fexcraft.mod.fvtm.util.function.InventoryFunction;
-import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
@@ -24,7 +20,7 @@ public class FlatbedWagonLogTransport2 extends PartModel {
 		super(); textureX = 1024; textureY = 256;
 		this.addToCreators("zackyboy19");
 		//
-		TurboList logs = new TurboList("logs");
+		ModelGroup logs = new ModelGroup("logs");
 		logs.add(new ModelRendererTurbo(logs, 137, 0, textureX, textureY).addCylinder(0, 0, 0, 5, 220, 18, 1, 1, 4)
 			.setRotationPoint(110, -34, 19).setRotationAngle(0, 0, 90)
 		);
@@ -145,9 +141,9 @@ public class FlatbedWagonLogTransport2 extends PartModel {
 		logs.add(new ModelRendererTurbo(logs, 591, 0, textureX, textureY).addCylinder(0, 0, 0, 2, 220, 15, 1, 1, 4)
 			.setRotationPoint(109, -79, 17).setRotationAngle(0, 0, 90)
 		);
-		logs.addProgram(new TurboList.Program(){
-			@Override public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-		        NonNullList<ItemStack> stacks = data.getPart(part).getFunction(InventoryFunction.class, "fvtm:inventory").getStacks();
+		logs.addProgram(new ModelGroup.Program(){
+			@Override public void preRender(ModelGroup list, ModelRenderData data){
+		        NonNullList<ItemStack> stacks = data.part.getFunction(InventoryFunction.class, "fvtm:inventory").getStacks();
 		        int j = 0;
 		        for(int i = 0; i < list.size(); i++){
 		            if(i < stacks.size() && !stacks.get(i).isEmpty()){
@@ -158,7 +154,7 @@ public class FlatbedWagonLogTransport2 extends PartModel {
 		        for(int i = 0; i < j; i++) list.get(i).render();
 		        list.visible = false;
 			}
-			@Override public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){ list.visible = true; }
+			@Override public void postRender(ModelGroup list, ModelRenderData data){ list.visible = true; }
 			@Override public String getId(){ return "zmp:flatbed_logtransport"; }
 		});
 		this.groups.add(logs);

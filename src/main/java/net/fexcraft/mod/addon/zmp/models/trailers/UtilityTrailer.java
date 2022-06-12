@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.zmp.models.trailers;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
@@ -17,7 +17,7 @@ public class UtilityTrailer extends VehicleModel {
 	public UtilityTrailer(){
 		super(); textureX = 512; textureY = 128;
 		//
-		TurboList group0 = new TurboList("group0");
+		ModelGroup group0 = new ModelGroup("group0");
 		group0.add(new ModelRendererTurbo(group0, 1, 1, textureX, textureY).addBox(0, 0, 0, 100, 2, 2)
 			.setRotationPoint(-99, -2, -1).setRotationAngle(0, 0, -0).setName("Box 0")
 		);
@@ -177,7 +177,7 @@ public class UtilityTrailer extends VehicleModel {
 		);
 		this.groups.add(group0);
 		//
-		TurboList axle = new TurboList("axle");
+		ModelGroup axle = new ModelGroup("axle");
 		axle.add(new ModelRendererTurbo(axle, 497, 1, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 3, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-75, 0.5f, -2.5f).setRotationAngle(0, 0, -0).setName("Box 299")
@@ -220,7 +220,7 @@ public class UtilityTrailer extends VehicleModel {
 		);
 		this.groups.add(axle);
 		//
-		TurboList lights_rear = new TurboList("lights_rear");
+		ModelGroup lights_rear = new ModelGroup("lights_rear");
 		lights_rear.add(new ModelRendererTurbo(lights_rear, 385, 9, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
 			.setRotationPoint(-100.5f, -1.2f, -14).setRotationAngle(0, 0, -0).setName("Box 143")
 		);
@@ -230,21 +230,21 @@ public class UtilityTrailer extends VehicleModel {
 		lights_rear.addProgram(DefaultPrograms.BACK_LIGHTS);
 		this.groups.add(lights_rear);
 		//
-		TurboList light_right = new TurboList("light_right");
+		ModelGroup light_right = new ModelGroup("light_right");
 		light_right.add(new ModelRendererTurbo(light_right, 73, 9, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(-100.5f, -1.2f, -12).setRotationAngle(0, 0, -0).setName("Box 146")
 		);
 		light_right.addProgram(DefaultPrograms.TURN_SIGNAL_RIGHT);
 		this.groups.add(light_right);
 		//
-		TurboList light_left = new TurboList("light_left");
+		ModelGroup light_left = new ModelGroup("light_left");
 		light_left.add(new ModelRendererTurbo(light_left, 49, 9, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(-100.5f, -1.2f, 11).setRotationAngle(0, 0, -0).setName("Box 145")
 		);
 		light_left.addProgram(DefaultPrograms.TURN_SIGNAL_LEFT);
 		this.groups.add(light_left);
 		//
-		TurboList door_rf = new TurboList("door_rf");
+		ModelGroup door_rf = new ModelGroup("door_rf");
 		door_rf.add(new ModelRendererTurbo(door_rf, 265, 97, textureX, textureY)
 			.addShapeBox(-12, 0, -1, 12, 18, 1, 0, -1, -1, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-34, -19.7f, -15).setRotationAngle(0, 0, -0).setName("Box 215")
@@ -255,7 +255,7 @@ public class UtilityTrailer extends VehicleModel {
 		door_rf.addProgram(new DefaultPrograms.AttributeRotator("storagebox_right", true, -170, 0, -1f, 1, null));
 		this.groups.add(door_rf);
 		//
-		TurboList door_rb = new TurboList("door_rb");
+		ModelGroup door_rb = new ModelGroup("door_rb");
 		door_rb.add(new ModelRendererTurbo(door_rb, 177, 97, textureX, textureY)
 			.addShapeBox(0, 0, -1, 12, 18, 1, 0, -1, -1, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-59, -19.7f, -15).setRotationAngle(0, 0, 0).setName("Box 214")
@@ -266,7 +266,7 @@ public class UtilityTrailer extends VehicleModel {
 		door_rb.addProgram(new DefaultPrograms.AttributeRotator("storagebox_right", true, 0, 170, 1f, 1, null));
 		this.groups.add(door_rb);
 		//
-		TurboList door_lf = new TurboList("door_lf");
+		ModelGroup door_lf = new ModelGroup("door_lf");
 		door_lf.add(new ModelRendererTurbo(door_lf, 457, 81, textureX, textureY)
 			.addShapeBox(-12, 0, 0, 12, 18, 1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, -1, -1, 0)
 			.setRotationPoint(-34, -19.7f, 15).setRotationAngle(0, 0, -0).setName("Box 213")
@@ -277,7 +277,7 @@ public class UtilityTrailer extends VehicleModel {
 		door_lf.addProgram(new DefaultPrograms.AttributeRotator("storagebox_left", true, 0, 170, 1f, 1, null));
 		this.groups.add(door_lf);
 		//
-		TurboList door_lb = new TurboList("door_lb");
+		ModelGroup door_lb = new ModelGroup("door_lb");
 		door_lb.add(new ModelRendererTurbo(door_lb, 41, 81, textureX, textureY)
 			.addShapeBox(0, 0, 0, 12, 18, 1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, -1, -1, 0)
 			.setRotationPoint(-59, -19.7f, 15).setRotationAngle(0, 0, -0).setName("Box 212")
@@ -288,7 +288,7 @@ public class UtilityTrailer extends VehicleModel {
 		door_lb.addProgram(new DefaultPrograms.AttributeRotator("storagebox_left", true, -170, 0, -1f, 1, null));
 		this.groups.add(door_lb);
 		//
-		TurboList primary = new TurboList("primary");
+		ModelGroup primary = new ModelGroup("primary");
 		primary.add(new ModelRendererTurbo(primary, 49, 49, textureX, textureY).addBox(0, 0, 0, 40, 7, 1)
 			.setRotationPoint(-100, -8.7f, -15).setRotationAngle(0, 0, -0).setName("Box 154")
 		);
@@ -310,7 +310,7 @@ public class UtilityTrailer extends VehicleModel {
 		primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(primary);
 		//
-		TurboList secondary = new TurboList("secondary");
+		ModelGroup secondary = new ModelGroup("secondary");
 		secondary.add(new ModelRendererTurbo(secondary, 169, 65, textureX, textureY).addBox(0, 0, 0, 1, 19, 9)
 			.setRotationPoint(-34, -20.7f, 6).setRotationAngle(0, 0, -0).setName("Box 191")
 		);

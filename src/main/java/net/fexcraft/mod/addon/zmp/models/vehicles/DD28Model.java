@@ -5,11 +5,8 @@ import org.lwjgl.opengl.GL11;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
-import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -22,7 +19,7 @@ public class DD28Model extends VehicleModel {
 		super(); textureX = 1024; textureY = 1024;
 		this.addToCreators("zackyboy19");
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 28, 103, textureX, textureY).addBox(0, 0, 0, 1, 20, 1)
 			.setRotationPoint(79, -33, -20).setRotationAngle(0, 0, 0).setName("Box 0")
 		);
@@ -1779,7 +1776,7 @@ public class DD28Model extends VehicleModel {
 		);
 		this.groups.add(chassis);
 		//
-		TurboList doors_closed = new TurboList("doors_closed");
+		ModelGroup doors_closed = new ModelGroup("doors_closed");
 		doors_closed.add(new ModelRendererTurbo(doors_closed, 357, 90, textureX, textureY).addBox(0, 0, 0, 10, 20, 1)
 			.setRotationPoint(12, -55, -12.5f).setRotationAngle(0, 0, 0).setName("Box 189")
 		);
@@ -2088,7 +2085,7 @@ public class DD28Model extends VehicleModel {
 		);
 		this.groups.add(doors_closed);
 		//
-		TurboList doors_frontal = new TurboList("doors_frontal");
+		ModelGroup doors_frontal = new ModelGroup("doors_frontal");
 		doors_frontal.add(new ModelRendererTurbo(doors_frontal, 45, 16, textureX, textureY).addBox(0, 0, 0, 10, 8, 1)
 			.setRotationPoint(-87, -63, 11.5f).setRotationAngle(0, 0, 0).setName("Box 608")
 		);
@@ -2233,7 +2230,7 @@ public class DD28Model extends VehicleModel {
 		);
 		this.groups.add(doors_frontal);
 		//
-		TurboList doors_openable = new TurboList("doors_openable");
+		ModelGroup doors_openable = new ModelGroup("doors_openable");
 		doors_openable.add(new ModelRendererTurbo(doors_openable, 295, 90, textureX, textureY).addBox(0, 0, 0, 10, 20, 1)
 			.setRotationPoint(24, -55, -12.5f).setRotationAngle(0, 0, 0).setName("Box 206")
 		);
@@ -2648,16 +2645,9 @@ public class DD28Model extends VehicleModel {
 	}
 	
 	@Override
-	public void render(VehicleData data, Object key){
+	public void render(ModelRenderData data){
 		GL11.glRotatef(180f, 0, 1, 0);
-		super.render(data, key);
-		GL11.glRotatef(-180f, 0, 1, 0);
-	}
-
-	@Override
-	public void render(VehicleData data, Object key, Entity ent, RenderCache cache){
-		GL11.glRotatef(180f, 0, 1, 0);
-		super.render(data, key, ent, cache);
+		super.render(data);
 		GL11.glRotatef(-180f, 0, 1, 0);
 	}
 

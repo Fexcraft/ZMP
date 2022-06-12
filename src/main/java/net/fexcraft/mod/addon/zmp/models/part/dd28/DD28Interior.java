@@ -5,11 +5,8 @@ import org.lwjgl.opengl.GL11;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
-import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -22,7 +19,7 @@ public class DD28Interior extends PartModel {
 		super(); textureX = 1024; textureY = 1024;
 		this.addToCreators("zackyboy19");
 		//
-		TurboList interior = new TurboList("interior");
+		ModelGroup interior = new ModelGroup("interior");
 		interior.add(new ModelRendererTurbo(interior, 663, 101, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 9, 8, 0, -2, 0, 0, 2, 0, 0, 2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-33, -62, -15).setRotationAngle(0, 0, 0).setName("Box 1422")
@@ -164,16 +161,9 @@ public class DD28Interior extends PartModel {
 	}
 	
 	@Override
-	public void render(VehicleData data, String key){
+	public void render(ModelRenderData data){
 		GL11.glRotatef(180f, 0, 1, 0);
-		super.render(data, key);
-		GL11.glRotatef(-180f, 0, 1, 0);
-	}
-
-	@Override
-	public void render(VehicleData data, String key, Entity ent, RenderCache cache){
-		GL11.glRotatef(180f, 0, 1, 0);
-		super.render(data, key, ent, cache);
+		super.render(data);
 		GL11.glRotatef(-180f, 0, 1, 0);
 	}
 

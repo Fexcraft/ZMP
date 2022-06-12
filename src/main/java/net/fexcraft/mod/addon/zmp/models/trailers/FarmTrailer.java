@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.zmp.models.trailers;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.2 of<br>
@@ -17,7 +17,7 @@ public class FarmTrailer extends VehicleModel {
 	public FarmTrailer(){
 		super(); textureX = 512; textureY = 128;
 		//
-		TurboList body = new TurboList("body");
+		ModelGroup body = new ModelGroup("body");
 		body.add(new ModelRendererTurbo(body, 1, 1, textureX, textureY).addBox(0, 0, 0, 100, 2, 2)
 			.setRotationPoint(-99, -1, -1).setRotationAngle(0, 0, -0).setName("Box 0")
 		);
@@ -293,21 +293,21 @@ public class FarmTrailer extends VehicleModel {
 		);
 		this.groups.add(body);
 		//
-		TurboList indicator_left = new TurboList("indicator_left");
+		ModelGroup indicator_left = new ModelGroup("indicator_left");
 		indicator_left.add(new ModelRendererTurbo(indicator_left, 49, 9, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(-100.5f, -0.2f, 11).setRotationAngle(0, 0, -0).setName("Box 145")
 		);
 		indicator_left.addProgram(DefaultPrograms.INDICATOR_LIGHT_LEFT);
 		this.groups.add(indicator_left);
 		//
-		TurboList indicator_right = new TurboList("indicator_right");
+		ModelGroup indicator_right = new ModelGroup("indicator_right");
 		indicator_right.add(new ModelRendererTurbo(indicator_right, 73, 9, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(-100.5f, -0.2f, -12).setRotationAngle(0, 0, -0).setName("Box 146")
 		);
 		indicator_right.addProgram(DefaultPrograms.INDICATOR_LIGHT_RIGHT);
 		this.groups.add(indicator_right);
 		//
-		TurboList rear_lights = new TurboList("rear_lights");
+		ModelGroup rear_lights = new ModelGroup("rear_lights");
 		rear_lights.add(new ModelRendererTurbo(rear_lights, 385, 9, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
 			.setRotationPoint(-100.5f, -0.2f, -14).setRotationAngle(0, 0, -0).setName("Box 143")
 		);

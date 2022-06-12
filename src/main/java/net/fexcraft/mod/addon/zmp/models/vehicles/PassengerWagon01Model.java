@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.zmp.models.vehicles;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
@@ -19,7 +19,7 @@ public class PassengerWagon01Model extends VehicleModel {
 		this.addToCreators("zackyboy19");
 		this.addToCreators("Ferdinand");
 		//
-		TurboList doors_left = new TurboList("doors_left");
+		ModelGroup doors_left = new ModelGroup("doors_left");
 		doors_left.add(new ModelRendererTurbo(doors_left, 90, 244, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0)
 			.setRotationPoint(101, -54, 22.5f).setRotationAngle(0, 0, 0).setName("Box 1127")
@@ -138,7 +138,7 @@ public class PassengerWagon01Model extends VehicleModel {
 		);
 		this.groups.add(doors_left);
 		//
-		TurboList doors_right = new TurboList("doors_right");
+		ModelGroup doors_right = new ModelGroup("doors_right");
 		doors_right.add(new ModelRendererTurbo(doors_right, 989, 243, textureX, textureY).addBox(0, 0, 0, 2, 16, 2)
 			.setRotationPoint(94, -54, -24.5f).setRotationAngle(0, 0, 0).setName("Box 1144")
 		);
@@ -257,7 +257,7 @@ public class PassengerWagon01Model extends VehicleModel {
 		);
 		this.groups.add(doors_right);
 		//
-		TurboList frame = new TurboList("frame");
+		ModelGroup frame = new ModelGroup("frame");
 		frame.add(new ModelRendererTurbo(frame, 199, 278, textureX, textureY).addBox(0, 0, 0, 1, 6, 6)
 			.setRotationPoint(114.5f, -16, -3).setRotationAngle(0, 0, 0).setName("Box 52")
 		);
@@ -878,7 +878,7 @@ public class PassengerWagon01Model extends VehicleModel {
 	}
 
 	private void addPrimary(){
-		TurboList primary = new TurboList("primary");
+		ModelGroup primary = new ModelGroup("primary");
 		primary.add(new ModelRendererTurbo(primary, 610, 98, textureX, textureY)
 			.addShapeBox(0, 0, 0, 115, 2, 50, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-115, -61, -25).setRotationAngle(0, 0, 0).setName("Box 488")

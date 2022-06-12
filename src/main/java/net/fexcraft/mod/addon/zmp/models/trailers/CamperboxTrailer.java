@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.zmp.models.trailers;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.2 of<br>
@@ -19,7 +19,7 @@ public class CamperboxTrailer extends VehicleModel {
 		this.addToCreators("zackyboy18");
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList chassis_structure = new TurboList("chassis_structure");
+		ModelGroup chassis_structure = new ModelGroup("chassis_structure");
 		chassis_structure.add(new ModelRendererTurbo(chassis_structure, 243, 0, textureX, textureY)
 			.addShapeBox(0, 0, 0, 5, 1, 1, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0)
 			.setRotationPoint(-46, 0.5f, -1).setRotationAngle(0, 0, 0).setName("Box 298")
@@ -284,7 +284,7 @@ public class CamperboxTrailer extends VehicleModel {
 		);
 		this.groups.add(chassis_structure);
 		//
-		TurboList indicator_left = new TurboList("indicator_left");
+		ModelGroup indicator_left = new ModelGroup("indicator_left");
 		indicator_left.add(new ModelRendererTurbo(indicator_left, 248, 21, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 2, 0, -0.5f, 0, 0, 0, 0, 0, 0.25f, 0, 0, -0.75f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0.25f, 0, 0, -0.75f, 0, 0)
 			.setRotationPoint(-67.5f, -2.5f, 17.5f).setRotationAngle(0, 0, 0)
@@ -292,7 +292,7 @@ public class CamperboxTrailer extends VehicleModel {
 		indicator_left.addProgram(DefaultPrograms.INDICATOR_LIGHT_LEFT);
 		this.groups.add(indicator_left);
 		//
-		TurboList indicator_right = new TurboList("indicator_right");
+		ModelGroup indicator_right = new ModelGroup("indicator_right");
 		indicator_right.add(new ModelRendererTurbo(indicator_right, 133, 19, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 2, 0, -0.75f, 0, 0, 0.25f, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.75f, 0, 0, 0.25f, 0, 0, 0, 0, 0, -0.5f, 0, 0)
 			.setRotationPoint(-67.5f, -2.5f, -20.5f).setRotationAngle(0, 0, 0)
@@ -300,7 +300,7 @@ public class CamperboxTrailer extends VehicleModel {
 		indicator_right.addProgram(DefaultPrograms.INDICATOR_LIGHT_RIGHT);
 		this.groups.add(indicator_right);
 		//
-		TurboList rear_lights = new TurboList("rear_lights");
+		ModelGroup rear_lights = new ModelGroup("rear_lights");
 		rear_lights.add(new ModelRendererTurbo(rear_lights, 133, 23, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 2, 0, -0.5f, 0, 0, 0, 0, 0, 0.25f, 0, 0, -0.75f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0.25f, 0, 0, -0.75f, 0, 0)
 			.setRotationPoint(-68, -2.5f, 15).setRotationAngle(0, 0, 0)

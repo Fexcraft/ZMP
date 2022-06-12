@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.zmp.models.vehicles;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
@@ -17,7 +17,7 @@ public class FlatbedwagonModel extends VehicleModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("zackyboy19");
 		//
-		TurboList wagon = new TurboList("wagon");
+		ModelGroup wagon = new ModelGroup("wagon");
 		wagon.add(new ModelRendererTurbo(wagon, 350, 157, textureX, textureY).addBox(0, 0, 0, 1, 6, 6)
 			.setRotationPoint(114.5f, -24, -3).setRotationAngle(0, 0, 0).setName("Box 52")
 		);

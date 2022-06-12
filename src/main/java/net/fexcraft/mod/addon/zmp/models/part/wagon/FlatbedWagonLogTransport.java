@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.5-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class FlatbedWagonLogTransport extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("zackyboy19");
 		//
-		TurboList log_upgrade = new TurboList("log_upgrade");
+		ModelGroup log_upgrade = new ModelGroup("log_upgrade");
 		log_upgrade.add(new ModelRendererTurbo(log_upgrade, 0, 114, textureX, textureY).addBox(0, 0, 0, 4, 3, 50)
 			.setRotationPoint(111, -78, -25).setRotationAngle(0, 0, 0).setName("Box 487")
 		);
