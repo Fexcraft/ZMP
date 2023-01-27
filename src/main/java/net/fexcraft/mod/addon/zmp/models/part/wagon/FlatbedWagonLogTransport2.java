@@ -3,11 +3,14 @@ package net.fexcraft.mod.addon.zmp.models.part.wagon;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.data.inv.InvHandlerItem;
 import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.util.function.InventoryFunction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
+
+import java.util.ArrayList;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.5-test &copy; 2018 - Fexcraft.net<br>
@@ -143,10 +146,10 @@ public class FlatbedWagonLogTransport2 extends PartModel {
 		);
 		logs.addProgram(new ModelGroup.Program(){
 			@Override public void preRender(ModelGroup list, ModelRenderData data){
-		        NonNullList<ItemStack> stacks = data.part.getFunction(InventoryFunction.class, "fvtm:inventory").getStacks();
+		        ArrayList<InvHandlerItem.StackEntry> stacks = data.part.getFunction(InventoryFunction.class, "fvtm:inventory").inventory().getStacks();
 		        int j = 0;
 		        for(int i = 0; i < list.size(); i++){
-		            if(i < stacks.size() && !stacks.get(i).isEmpty()){
+		            if(i < stacks.size()){
 		                j++; continue; //cargo[i].render();
 		            }
 		            if(i >= stacks.size()) break;
