@@ -1,15 +1,16 @@
 //FMT-Marker FVTM-1
 package net.fexcraft.mod.addon.zmp.models.part.wagon;
 
+import java.util.ArrayList;
+
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.data.inv.InvHandlerItem;
 import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.ModelRenderData;
 import net.fexcraft.mod.fvtm.model.PartModel;
+import net.fexcraft.mod.fvtm.model.Program;
 import net.fexcraft.mod.fvtm.util.function.InventoryFunction;
-
-import java.util.ArrayList;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.5-test &copy; 2018 - Fexcraft.net<br>
@@ -143,8 +144,8 @@ public class FlatbedWagonLogTransport2 extends PartModel {
 		logs.add(new ModelRendererTurbo(logs, 591, 0, textureX, textureY).addCylinder(0, 0, 0, 2, 220, 15, 1, 1, 4)
 			.setRotationPoint(109, -79, 17).setRotationAngle(0, 0, 90)
 		);
-		logs.addProgram(new ModelGroup.Program(){
-			@Override public void preRender(ModelGroup list, ModelRenderData data){
+		logs.addProgram(new Program(){
+			@Override public void pre(ModelGroup list, ModelRenderData data){
 		        ArrayList<InvHandlerItem.StackEntry> stacks = data.part.getFunction(InventoryFunction.class, "fvtm:inventory").inventory().getStacks();
 		        int j = 0;
 		        for(int i = 0; i < list.size(); i++){
@@ -156,8 +157,8 @@ public class FlatbedWagonLogTransport2 extends PartModel {
 		        for(int i = 0; i < j; i++) list.get(i).render();
 		        list.visible = false;
 			}
-			@Override public void postRender(ModelGroup list, ModelRenderData data){ list.visible = true; }
-			@Override public String getId(){ return "zmp:flatbed_logtransport"; }
+			@Override public void post(ModelGroup list, ModelRenderData data){ list.visible = true; }
+			@Override public String id(){ return "zmp:flatbed_logtransport"; }
 		});
 		this.groups.add(logs);
 		this.translate(0, 6, 0);
