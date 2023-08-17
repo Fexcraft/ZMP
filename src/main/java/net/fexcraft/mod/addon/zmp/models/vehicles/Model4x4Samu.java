@@ -1131,7 +1131,7 @@ public class Model4x4Samu extends VehicleModel {
 
         body[277].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 380
         body[277].setRotationPoint(35F, 11F, -3.5F);
-        this.add("body", body);
+        //this.add("body", body);
 
         ModelRendererTurbo[] body_door_close = new ModelRendererTurbo[8];
         body_door_close[0] = new ModelRendererTurbo(this, 401, 73, textureX, textureY); // Box 230
@@ -1165,10 +1165,10 @@ public class Model4x4Samu extends VehicleModel {
         body_door_close[6].setRotationPoint(6F, -5F, -17F);
 
         body_door_close[7].addBox(0F, 0F, 0F, 4, 1, 1, 0F); // Box 270
-        this.add("body_door_close", body_door_close);
+        //this.add("body_door_close", body_door_close);
 
         translate(0F, -12F, 0F);
-        fixRotations();
+        //fixRotations();
     }
 
 }
