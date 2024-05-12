@@ -1,23 +1,40 @@
 {
-    "RegistryName": "zmp:utility_trailer",
-    "Addon": "fvtm:zmp",
-    "Name": "Utility Trailer",
-    "Model": "zmp:models/vehicle/utility_trailer",
-    "Textures": [ "zmp:textures/trailers/utility.png" ],
-    "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 620.75 },
-    	{ "id":"storagebox_left", "type": "boolean", "value": false, "editable": true, "external": true, "hitbox": [ -46.5, -11, 15, 4 ] },
-    	{ "id":"storagebox_right", "type": "boolean", "value": false, "editable": true, "external": true, "hitbox": [ -46.5, -11, -15, 4 ] }
-    ],
-    "Category": "trailer,car_trailer",
-    "WheelPositions":[
-        { "x": -76.5, "y": 2, "z": 18.5, "id": "left_back_wheel", "radius": 6  },
-        { "x": -76.5, "y": 2, "z": -18.5, "id": "right_back_wheel", "radius": 6, "y_rot": 180 }
-    ],
-    "PreInstalled":{
-        "storagebox_left": "zmp:utility_trailer_storagebox",
-        "storagebox_right": "zmp:utility_trailer_storagebox"
+    "ID": "utility_trailer",
+    "Addon": "zmp",
+    "Name": "ZMP Utility Trailer",
+    "Model": "zmp:models/vehicle/utility_trailer.fmf",
+    "ModelData":{
+    	"Programs":[
+    		"primary fvtm:rgb_primary",
+    		"secondary fvtm:rgb_secondary"
+    	]
+    },
+    "ColorChannels":{
+    	"primary": "#fdfdfd",
+    	"secondary": "#fdfdfd"
+    },
+    "Texture": "Default;zmp:textures/vehicle/utility_trailer.png",
+    "Categories": [
+		"car_trailer", "trailer"
+	],
+	"Trailer": true,
+	"Attributes": {},
+	"WheelPositions": {
+		"left_back_wheel": {
+			"pos": [ -1.0625, -0.125, 4.78125 ],
+			"radius": 0.375,
+			"width": 0.25
+		},
+		"right_back_wheel": {
+			"pos": [ 1.0625, -0.125, 4.78125 ],
+			"radius": 0.375,
+			"width": 0.25,
+			"mirror": true
+		}
 	},
-    "Trailer": true,
-    "LegacyData": {}
+	"PartSlots":{},
+	"InstalledParts": {
+		"left_back_wheel": "zmp:trailer_wheel",
+		"right_back_wheel": "zmp:trailer_wheel"
+	}
 }
