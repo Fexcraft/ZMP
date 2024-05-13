@@ -1,10 +1,10 @@
 # ZMP
-ZMP - Zack's Model Projects
+ZMP - Zack's Models Pack
 
 # A Pack for FVTM!
-This is the repository for the ZMP pack.
+This is the repository for the ZMP.    
 A pack made based on the models by "zackyboy18".
 
 # Discord
-https://discord.gg/AkMAzaA (Fexcraft)
+[Fexcraft Discord](https://discord.gg/AkMAzaA)
 
