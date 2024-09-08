@@ -1,0 +1,43 @@
+{ 
+    "Addon": "zmp", 
+    "Name": "ZMP Passenger Wagon 01", 
+    "Model": "zmp:models/vehicle/passenger_wagon_01", 
+    "Texture": "zmp:textures/trains/pw_01.png", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 5000
+        }, 
+        "hitbox_width": { 
+            "type": "float", 
+            "value": 2
+        }, 
+        "hitbox_height": { 
+            "type": "float", 
+            "value": 2
+        }
+    }, 
+    "Category": "train,wagon,passenger_wagon", 
+    "WheelPositions": { 
+        "bogie_front": { 
+            "pos": [ -0.0, 0.8125, -5.3125 ]
+        }, 
+        "bogie_rear": { 
+            "pos": [ -0.0, 0.8125, 5.3125 ]
+        }
+    }, 
+    "RearConnector": [ -124, -21, 0 ], 
+    "FrontConnector": [ 124, -21, 0 ], 
+    "VehicleType": "RAIL", 
+    "Wagon": true, 
+    "ID": "passenger_wagon_01", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:bogie_front": "fvp:bogie_st1", 
+        "vehicle:bogie_rear": "fvp:bogie_st1", 
+        "vehicle:seats": "zmp:passenger_wagon_01_seats"
+    }
+}

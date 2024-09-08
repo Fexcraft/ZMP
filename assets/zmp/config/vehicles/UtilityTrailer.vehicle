@@ -1,40 +1,41 @@
-{
-    "ID": "utility_trailer",
-    "Addon": "zmp",
-    "Name": "ZMP Utility Trailer",
-    "Model": "zmp:models/vehicle/utility_trailer.fmf",
-    "ModelData":{
-    	"Programs":[
-    		"primary fvtm:rgb_primary",
-    		"secondary fvtm:rgb_secondary"
-    	]
-    },
-    "ColorChannels":{
-    	"primary": "#fdfdfd",
-    	"secondary": "#fdfdfd"
-    },
-    "Texture": "Default;zmp:textures/vehicle/utility_trailer.png",
-    "Categories": [
-		"car_trailer", "trailer"
-	],
-	"Trailer": true,
-	"Attributes": {},
-	"WheelPositions": {
-		"left_back_wheel": {
-			"pos": [ -1.0625, -0.125, 4.78125 ],
-			"radius": 0.375,
-			"width": 0.25
-		},
-		"right_back_wheel": {
-			"pos": [ 1.0625, -0.125, 4.78125 ],
-			"radius": 0.375,
-			"width": 0.25,
-			"mirror": true
-		}
-	},
-	"PartSlots":{},
-	"InstalledParts": {
-		"left_back_wheel": "zmp:trailer_wheel",
-		"right_back_wheel": "zmp:trailer_wheel"
-	}
+{ 
+    "ID": "utility_trailer", 
+    "Addon": "zmp", 
+    "Name": "ZMP Utility Trailer", 
+    "Model": "zmp:models/vehicle/utility_trailer.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "primary fvtm:rgb_primary", 
+            "secondary fvtm:rgb_secondary"
+        ]
+    }, 
+    "ColorChannels": { 
+        "primary": "#fdfdfd", 
+        "secondary": "#fdfdfd"
+    }, 
+    "Texture": "Default;zmp:textures/vehicle/utility_trailer.png", 
+    "Categories": [ 
+        "car_trailer", 
+        "trailer"
+    ], 
+    "Trailer": true, 
+    "Attributes": {}, 
+    "WheelPositions": { 
+        "left_back_wheel": { 
+            "pos": [ -1.0625, -0.125, 4.78125 ], 
+            "radius": 0.375, 
+            "width": 0.25
+        }, 
+        "right_back_wheel": { 
+            "pos": [ 1.0625, -0.125, 4.78125 ], 
+            "radius": 0.375, 
+            "width": 0.25, 
+            "mirror": true
+        }
+    }, 
+    "PartSlots": {}, 
+    "InstalledParts": { 
+        "left_back_wheel": "zmp:trailer_wheel", 
+        "right_back_wheel": "zmp:trailer_wheel"
+    }
 }

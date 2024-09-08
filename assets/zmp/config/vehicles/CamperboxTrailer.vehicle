@@ -1,0 +1,33 @@
+{ 
+    "Addon": "zmp", 
+    "Name": "Camperbox Trailer", 
+    "Model": "zmp:models/vehicle/camperbox_trailer", 
+    "Textures": [ 
+        "zmp:textures/trailers/camperbox.png"
+    ], 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 570.2
+        }
+    }, 
+    "Category": "trailer,car_trailer", 
+    "WheelPositions": { 
+        "left_back_wheel": { 
+            "radius": 0.375, 
+            "pos": [ -1.0625, -0.0625, 3.09375 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.375, 
+            "pos": [ 1.125, -0.0625, 3.09375 ], 
+            "mirror": true
+        }
+    }, 
+    "Trailer": true, 
+    "ID": "camperbox_trailer", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
+    "SimplePhysics": {}
+}

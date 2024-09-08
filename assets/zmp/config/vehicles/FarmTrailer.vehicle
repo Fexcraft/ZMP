@@ -1,0 +1,34 @@
+{ 
+    "Addon": "zmp", 
+    "Name": "Farm Trailer", 
+    "Model": "zmp:models/vehicle/farm_trailer", 
+    "Textures": [ 
+        "zmp:textures/trailers/farm.png"
+    ], 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 620.75
+        }
+    }, 
+    "Category": "trailer,car_trailer", 
+    "WheelPositions": { 
+        "left_back_wheel": { 
+            "radius": 0.375, 
+            "pos": [ -1.15625, -0.125, 5.09375 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.375, 
+            "pos": [ 1.15625, -0.125, 5.09375 ], 
+            "mirror": true
+        }
+    }, 
+    "Trailer": true, 
+    "RearConnector": [ -100.5, 0, 0 ], 
+    "ID": "farm_trailer", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
+    "SimplePhysics": {}
+}

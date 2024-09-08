@@ -1,0 +1,47 @@
+{ 
+    "Addon": "zmp", 
+    "Name": "DD28", 
+    "Model": "zmp:models/vehicle/dd28", 
+    "Textures": [ 
+        "Default Green;zmp:textures/trains/dd28_green.png", 
+        "Default Blue;zmp:textures/trains/dd28_blue.png", 
+        "Default Red;zmp:textures/trains/dd28_red.png"
+    ], 
+    "Category": "train,locomotive", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 2953.12
+        }, 
+        "hitbox_width": { 
+            "type": "float", 
+            "value": 2
+        }, 
+        "hitbox_height": { 
+            "type": "float", 
+            "value": 2
+        }
+    }, 
+    "WheelPositions": { 
+        "bogie_front": { 
+            "pos": [ -0.0, 0.8125, -3.25 ]
+        }, 
+        "bogie_rear": { 
+            "pos": [ -0.0, 0.8125, 3.25 ]
+        }
+    }, 
+    "RearConnector": [ -107, -21, 0 ], 
+    "FrontConnector": [ 106, -21, 0 ], 
+    "VehicleType": "RAIL", 
+    "ID": "dd28", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:interior": "zmp:dd28_interior", 
+        "vehicle:engine": "zmp:dd28_engine", 
+        "vehicle:bogie_front": "fvp:bogie_st1", 
+        "vehicle:bogie_rear": "fvp:bogie_st1"
+    }
+}
