@@ -1,0 +1,105 @@
+{ 
+    "ID": "samu_4x4", 
+    "Name": "4x4 SAMU", 
+    "Addon": "zmp", 
+    "Categories": [ 
+        "car", 
+        "samu", 
+        "ambulance"
+    ], 
+    "Model": "zmp:models/vehicle/samu_4x4.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "lights_front fvtm:front_lights", 
+            "lights_rear fvtm:back_lights", 
+            "lights_reverse fvtm:reverse_lights", 
+            "lights_brake fvtm:brake_lights", 
+            "lights_left fvtm:turn_signal_left", 
+            "lights_right fvtm:turn_signal_right", 
+            "lights_long fvtm:long_lights", 
+            "em_lights fvtm:attribute_lights em_lights", 
+            "em_lights_0 fvtm:attribute_lights em_lights", 
+            "em_lights_1 fvtm:attribute_lights em_lights"
+        ]
+    }, 
+    "Textures": [ 
+        "SAMU White/Yellow;zmp:textures/vehicle/samu_4x4.png"
+    ], 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.4, 
+        "WheelSpringStrength": 0.6
+    }, 
+    "Attributes": { 
+        "em_lights": { 
+            "type": "boolean", 
+            "access": [ 
+                "front_left", 
+                "front_right"
+            ], 
+            "interact": { 
+                "default": [ -0.34375, 0.46875, -1.40625, 0.125 ]
+            }
+        }
+    }, 
+    "InstalledParts": { 
+        "vehicle:engine": "gep:engine_diesel", 
+        "vehicle:transmission": "gep:automatic_transmission", 
+        "front_left": "plaincars:rim_12_4", 
+        "front_right": "plaincars:rim_12_4", 
+        "rear_left": "plaincars:rim_12_4", 
+        "rear_right": "plaincars:rim_12_4", 
+        "front_left:tire": "plaincars:tire_16_4", 
+        "front_right:tire": "plaincars:tire_16_4", 
+        "rear_left:tire": "plaincars:tire_16_4", 
+        "rear_right:tire": "plaincars:tire_16_4"
+    }, 
+    "PartSlots": { 
+        "engine": {}, 
+        "transmission": {}
+    }, 
+    "DefaultSeats": { 
+        "front_left": { 
+            "pos": [ -0.5625, -0.21875, -0.65625 ], 
+            "driver": true
+        }, 
+        "front_right": { 
+            "pos": [ 0.625, -0.21875, -0.65625 ]
+        }, 
+        "rear_left": { 
+            "pos": [ -0.625, -0.21875, 0.125 ]
+        }
+    }, 
+    "WheelPositions": { 
+        "front_left": { 
+            "pos": [ -0.90625, -0.78125, -2.40625 ], 
+            "steering": true, 
+            "required": true, 
+            "braking": true, 
+            "hubsize": 0.125
+        }, 
+        "front_right": { 
+            "pos": [ 0.90625, -0.78125, -2.40625 ], 
+            "steering": true, 
+            "mirror": true, 
+            "required": true, 
+            "braking": true, 
+            "hubsize": 0.125
+        }, 
+        "rear_left": { 
+            "pos": [ -0.90625, -0.78125, 1.96875 ], 
+            "required": true, 
+            "braking": true, 
+            "hubsize": 0.125
+        }, 
+        "rear_right": { 
+            "pos": [ 0.84375, -0.78125, 1.96875 ], 
+            "mirror": true, 
+            "required": true, 
+            "braking": true, 
+            "hubsize": 0.125
+        }
+    }, 
+    "Connectors": { 
+        "car_trailer": [ 0, -0.78125, 3.21875 ]
+    }
+}

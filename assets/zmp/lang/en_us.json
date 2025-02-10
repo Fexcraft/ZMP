@@ -1,0 +1,18 @@
+{ 
+    "itemGroup.fvtm:zmp": "Zack's Models Pack", 
+    "item.zmp.dd28_engine": "DD28 Locomotive Engine", 
+    "item.zmp.dd28_interior": "DD28 Interior", 
+    "item.zmp.flatbedwagon_containerholder": "Flatbed Wagon Container Holder", 
+    "item.zmp.flatbedwagon_logtransport": "", 
+    "item.zmp.flatbedwagon_logtransport2": "", 
+    "item.zmp.trailer_wheel": "ZMP Trailer Wheel", 
+    "item.zmp.camperbox_trailer": "Camperbox Trailer", 
+    "item.zmp.dd28": "DD28 Locomotive", 
+    "item.zmp.farm_trailer": "Farm Trailer", 
+    "item.zmp.flatbedwagon": "Flatbed Wagon", 
+    "item.zmp.passenger_wagon_01": "Passenger Wagon (01)", 
+    "item.zmp.passenger_wagon_01_seats": "Passenger Wagon (01) Seats", 
+    "item.zmp.utility_trailer_storagebox": "Utility Trailer Storagebox", 
+    "item.zmp.utility_trailer": "Utility Trailer",
+    "item.zmp.samu_4x4": "4x4 SAMU"
+}
