@@ -18,8 +18,8 @@
             "lights_right fvtm:turn_signal_right", 
             "lights_long fvtm:long_lights", 
             "em_lights fvtm:attribute_lights em_lights", 
-            "em_lights_0 fvtm:attribute_lights em_lights", 
-            "em_lights_1 fvtm:attribute_lights em_lights"
+            "em_lights_0 fvtm:attribute_signal_lights em_lights 1",
+            "em_lights_1 fvtm:attribute_signal_lights em_lights 3"
         ]
     }, 
     "Textures": [ 
@@ -92,7 +92,7 @@
             "hubsize": 0.125
         }, 
         "rear_right": { 
-            "pos": [ 0.84375, -0.78125, 1.96875 ], 
+            "pos": [ 0.90625, -0.78125, 1.96875 ],
             "mirror": true, 
             "required": true, 
             "braking": true, 
