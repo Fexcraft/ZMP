@@ -1,7 +1,13 @@
 { 
+    "ID": "passenger_wagon_01", 
     "Addon": "zmp", 
     "Name": "ZMP Passenger Wagon 01", 
-    "Model": "zmp:models/vehicle/passenger_wagon_01", 
+    "Model": "zmp:models/vehicle/passwagon1.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "primary fvtm:rgb_channel primary"
+        ]
+    }, 
     "Texture": "zmp:textures/trains/pw_01.png", 
     "Attributes": { 
         "weight": { 
@@ -20,24 +26,103 @@
     "Category": "train,wagon,passenger_wagon", 
     "WheelPositions": { 
         "bogie_front": { 
-            "pos": [ -0.0, 0.8125, -5.3125 ]
+            "pos": [ -0.0, 0.75, -5.3125 ]
         }, 
         "bogie_rear": { 
-            "pos": [ -0.0, 0.8125, 5.3125 ]
+            "pos": [ -0.0, 0.75, 5.3125 ]
         }
     }, 
-    "RearConnector": [ -124, -21, 0 ], 
-    "FrontConnector": [ 124, -21, 0 ], 
+    "Connectors": { 
+        "rear": [ 0, 1.3125, 7.75 ], 
+        "front": [ 0, 1.3125, -7.75 ]
+    }, 
     "VehicleType": "RAIL", 
     "Wagon": true, 
-    "ID": "passenger_wagon_01", 
     "ColorChannels": { 
-        "primary": "#ffffff", 
-        "secondary": "#ffffff"
+        "primary": "#ffffff"
     }, 
     "InstalledParts": { 
-        "vehicle:bogie_front": "fvp:bogie_st1", 
-        "vehicle:bogie_rear": "fvp:bogie_st1", 
-        "vehicle:seats": "zmp:passenger_wagon_01_seats"
+        "bogie_front": "fvp:bogie_st1", 
+        "bogie_rear": "fvp:bogie_st1"
+    }, 
+    "Categories": [ 
+        "train,wagon,passenger_wagon"
+    ], 
+    "Textures": [ 
+        "zmp:textures/trains/pw_01.png"
+    ], 
+    "DefaultSeats": { 
+        "entry0": { 
+            "pos": [ -1.0, 1.9375, 4.375 ]
+        }, 
+        "entry1": { 
+            "pos": [ 1.0, 1.9375, 4.375 ]
+        }, 
+        "entry2": { 
+            "pos": [ 0.375, 1.9375, 4.375 ]
+        }, 
+        "entry3": { 
+            "pos": [ -1.0, 1.9375, 1.75 ]
+        }, 
+        "entry4": { 
+            "pos": [ 1.0, 1.9375, 1.75 ]
+        }, 
+        "entry5": { 
+            "pos": [ 0.375, 1.9375, 1.75 ]
+        }, 
+        "entry6": { 
+            "pos": [ -1.0, 1.9375, -0.875 ]
+        }, 
+        "entry7": { 
+            "pos": [ 1.0, 1.9375, -0.875 ]
+        }, 
+        "entry8": { 
+            "pos": [ 0.375, 1.9375, -0.875 ]
+        }, 
+        "entry9": { 
+            "pos": [ -1.0, 1.9375, -3.4375 ]
+        }, 
+        "entry10": { 
+            "pos": [ 1.0, 1.9375, -3.4375 ]
+        }, 
+        "entry11": { 
+            "pos": [ 0.375, 1.9375, -3.4375 ]
+        }, 
+        "entry12": { 
+            "pos": [ -1.0, 1.9375, -5.1875 ]
+        }, 
+        "entry13": { 
+            "pos": [ 1.0, 1.9375, -5.1875 ]
+        }, 
+        "entry14": { 
+            "pos": [ 0.375, 1.9375, -5.1875 ]
+        }, 
+        "entry15": { 
+            "pos": [ -1.0, 1.9375, -0.0625 ]
+        }, 
+        "entry16": { 
+            "pos": [ 1.0, 1.9375, -0.0625 ]
+        }, 
+        "entry17": { 
+            "pos": [ 0.375, 1.9375, -0.0625 ]
+        }, 
+        "entry18": { 
+            "pos": [ -1.0, 1.9375, 2.5625 ]
+        }, 
+        "entry19": { 
+            "pos": [ 1.0, 1.9375, 2.5625 ]
+        }, 
+        "entry20": { 
+            "pos": [ 0.375, 1.9375, 2.5625 ]
+        }, 
+        "entry21": { 
+            "pos": [ -1.0, 1.9375, -2.625 ]
+        }, 
+        "entry22": { 
+            "pos": [ 1.0, 1.9375, -2.625 ]
+        }, 
+        "entry23": { 
+            "pos": [ 0.375, 1.9375, -2.625 ]
+        }
     }
 }
