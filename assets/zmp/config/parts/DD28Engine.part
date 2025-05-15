@@ -1,0 +1,20 @@
+{
+    "ID": "dd28_engine",
+    "Addon": "zmp",
+    "Name": "DD28 Engine (Double V6)",
+    "Model": "zmp:models/part/dd28_engine.fmf",
+    "Category": "engine",
+    "Textures": [
+        "zmp:textures/trains/dd28_green.png",
+        "zmp:textures/trains/dd28_blue.png",
+        "zmp:textures/trains/dd28_red.png"
+    ],
+	"Functions": {
+		"fvtm:engine": {
+			"engine_speed": 2,
+			"idle_consumption": 4,
+			"active_consumption": 12,
+			"fuel_group": "diesel",
+		}
+	},
+}

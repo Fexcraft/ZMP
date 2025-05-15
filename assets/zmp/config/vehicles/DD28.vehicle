@@ -1,7 +1,8 @@
 { 
+    "ID": "dd28",
     "Addon": "zmp", 
     "Name": "DD28", 
-    "Model": "zmp:models/vehicle/dd28", 
+    "Model": "zmp:models/vehicle/dd28.fmf",
     "Textures": [ 
         "Default Green;zmp:textures/trains/dd28_green.png", 
         "Default Blue;zmp:textures/trains/dd28_blue.png", 
@@ -24,24 +25,36 @@
     }, 
     "WheelPositions": { 
         "bogie_front": { 
-            "pos": [ -0.0, 0.8125, -3.25 ]
+            "pos": [ -0.0, 0.75, -3.25 ]
         }, 
         "bogie_rear": { 
-            "pos": [ -0.0, 0.8125, 3.25 ]
+            "pos": [ -0.0, 0.75, 3.25 ]
         }
-    }, 
-    "RearConnector": [ -107, -21, 0 ], 
-    "FrontConnector": [ 106, -21, 0 ], 
+    },
+    "Connectors":{
+        "rear": [ 0, 1.3125, 6.6875 ],
+        "front": [ 0, 1.3125, -6.6875 ]
+    },
     "VehicleType": "RAIL", 
-    "ID": "dd28", 
     "ColorChannels": { 
         "primary": "#ffffff", 
         "secondary": "#ffffff"
     }, 
-    "InstalledParts": { 
-        "vehicle:interior": "zmp:dd28_interior", 
+    "PartSlots": {
+        "engine": {}
+    },
+    "InstalledParts": {
         "vehicle:engine": "zmp:dd28_engine", 
-        "vehicle:bogie_front": "fvp:bogie_st1", 
-        "vehicle:bogie_rear": "fvp:bogie_st1"
+        "bogie_front": "fvp:bogie_st1",
+        "bogie_rear": "fvp:bogie_st1"
+    }
+    "DefaultSeats": {
+        "driver": {
+            "pos": [ 0.6875, 2.3125, 2.3125 ],
+            "driver": true
+        }
+        "pass": {
+            "pos": [ -0.6875, 2.3125, 2.3125 ]
+        }
     }
 }
